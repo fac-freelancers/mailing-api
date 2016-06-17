@@ -11,13 +11,22 @@ server.connection({
   port
 });
 
-server.route({
-  method: 'post',
-  path: '/mail',
-  handler: function (request, reply) {
-    reply(true);
+server.route([
+  {
+    method: 'post',
+    path: '/mail',
+    handler: function (request, reply) {
+      reply(true);
+    }
+  },
+  {
+    method: 'get',
+    path: '/',
+    handler: function(request, reply) {
+      reply('The factree api, set up to recieve post requests from the /mail endpoin');
+    }
   }
-});
+]);
 
 // Start the server
 server.start(err => {
