@@ -1,0 +1,27 @@
+{
+  "name": "mailing-api",
+  "version": "1.0.0",
+  "description": "An api for the [facTree website](https://github.com/fac-freelancers/website)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "fac",
+    "tree",
+    "factree"
+  ],
+  "author": "fac-freelancers",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fac-freelancers/mailing-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fac-freelancers/mailing-api/issues"
+  },
+  "dependencies": {
+    "env2": "^2.1.0",
+    "hapi": "^13.4.1"
+  }
+}
