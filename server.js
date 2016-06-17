@@ -11,17 +11,12 @@ server.connection({
   port
 });
 
-server.register([], err => {
-  if(err) throw err;
-
-  server.route({
-    method: 'post',
-    path: '/mail',
-    handler: function (request, reply) {
-      console.log(request);
-      reply(true);
-    }
-  });
+server.route({
+  method: 'post',
+  path: '/mail',
+  handler: function (request, reply) {
+    reply(true);
+  }
 });
 
 // Start the server
