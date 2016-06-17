@@ -6,10 +6,7 @@ const port = process.env.PORT || 8000;
 // Create a server with a host and port
 const server = new Hapi.Server();
 
-server.connection({
-  host: 'localhost',
-  port
-});
+server.connection({ port });
 
 server.route([
   {
@@ -22,8 +19,8 @@ server.route([
   {
     method: 'get',
     path: '/',
-    handler: function(request, reply) {
-      reply('The factree api, set up to recieve post requests from the /mail endpoin');
+    handler: function (request, reply) {
+      reply('The factree api, set up to recieve post requests from the /mail endpoint');
     }
   }
 ]);
