@@ -16,6 +16,7 @@ server.route([
     method: 'get',
     path: '/mail/{info}',
     handler: function (request, reply) {
+      if(request.params.info.substring(0, 1) === 't') reply('working');
       const info = JSON.parse(request.params.info);
       mg.sendText(
         info.email,
