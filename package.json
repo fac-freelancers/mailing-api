@@ -23,6 +23,6 @@
   "dependencies": {
     "env2": "^2.1.0",
     "hapi": "^13.4.1",
-    "mailgun": "^0.5.0"
+    "mailgun-js": "^0.7.11"
   }
 }
